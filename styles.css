@@ -1,0 +1,163 @@
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} */
+
+/* body {
+  display: flex;
+  flex-direction: column;
+} */
+:root {
+  --blue: #4b382a;
+  --white: #F9FAF8;
+  --offWhite: #E5E7EB;
+  --grey: #4d4e53;
+  --purple: #8D8DAA;
+  --pink: #F56D91;
+  --lightGray: #DFDFDE;
+
+  --main: #96B6C5;
+  --secondary: #EEE0C9;
+  --text: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main);
+  color: var(--text);
+}
+
+.right-links,
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.left-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.body {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-top {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--text);
+  line-height: 1.5;
+
+}
+
+#welcome-section h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#welcome-section p {
+  font-size: 1.1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.body-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#projects {
+  background-color: #4d4e53;
+  height: 600px;
+  display: flex;
+  gap: 100px;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+}
+
+.body-bottom {
+  background-color: brown;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+  height: 70px;
+}
+
+.image {
+  background-color: blueviolet;
+  width: 400px;
+  height: 300px;
+}
+
+.text {
+  background-color: brown;
+  width: 400px;
+}
