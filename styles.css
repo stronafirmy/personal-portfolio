@@ -1,13 +1,9 @@
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
-} */
+}
 
-/* body {
-  display: flex;
-  flex-direction: column;
-} */
 :root {
   --blue: #4b382a;
   --white: #F9FAF8;
@@ -37,9 +33,9 @@ a {
   color: var(--text);
 }
 
-img {
-  width: 50px;
-  height: 50px;
+#header-img {
+  width: 30px;
+  height: 30px;
   margin-left: 50px;
   border-radius: 50px;
 }
@@ -98,16 +94,21 @@ img {
 
 }
 
-#welcome-section h1 {
+#welcome-section h1,
+.body-middle h1,
+.body-bottom h1 {
   margin-top: 20px;
   font-size: 2rem;
   text-align: center;
 }
 
-#welcome-section p {
+#welcome-section p,
+.text,
+.body-bottom p {
   font-size: 1.1rem;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.5;
 }
 
 
@@ -116,12 +117,11 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 #projects {
-  background-color: #4d4e53;
-  height: 600px;
+  height: 800px;
   display: flex;
   gap: 100px;
 }
@@ -131,16 +131,35 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
 }
 
-.body-bottom {
-  background-color: brown;
+.image {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.image img {
   width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.text {
+  width: 400px;
+  height: 280px;
+  padding: 40px;
+  }
+
+.body-bottom {
+  width: 40%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  gap: 10px;
+  height: 300px;
+  margin: 40px;
 }
 
 .footer {
@@ -151,13 +170,22 @@ img {
   height: 70px;
 }
 
-.image {
-  background-color: blueviolet;
-  width: 400px;
-  height: 300px;
+.body-bottom p {
+  margin-bottom: 20px;
 }
 
-.text {
-  background-color: brown;
-  width: 400px;
+.socials {
+  display: flex;
+  gap: 5px;
+}
+
+.socials p {
+  background-color: var(--main);
+  opacity: 60%;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
 }
