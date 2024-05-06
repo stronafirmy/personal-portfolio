@@ -1,8 +1,4 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
+/* // CSS update on 06/05/2024 */
 
 :root {
   --blue: #4b382a;
@@ -17,6 +13,15 @@
   --secondary: #EEE0C9;
   --text: black;
 }
+
+
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 
 * {
   margin: 0;
@@ -188,4 +193,4 @@ a {
   justify-content: center;
   align-items: center;
   gap: 3px;
-}
+} */
