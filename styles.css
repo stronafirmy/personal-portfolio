@@ -56,8 +56,22 @@ body {
   height: 12svh;
   width: 100%;
   min-height: 60px;
-  border-bottom: 1px solid var(--separator);
+  border-bottom: 0.5px solid var(--separator);
   backdrop-filter: blur(6px);
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--headerText);
+  height: 12svh;
+  background: linear-gradient(to left,
+        #00e0ec,
+        #008ba7,
+        #bfb4c9,
+        #ff9d77);
 }
 
 .right-links {
@@ -65,15 +79,132 @@ body {
   gap: 20px;
 }
 
+.right-links > li > a {
+  color: var(--primaryText);
+  font-weight: 700;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
+  margin: 50px 200px;
+}
+
+header {
+  min-height: 50svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  background-image: url("images/clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primaryText);
+  letter-spacing: -1.5px;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--secondaryText);
+  letter-spacing: -1.5px;
 }
 
 .headline {
-  /* min-height: 50svh;
-  max-width: 960px;
-  margin-inline: auto; */
+  /* margin-inline: auto;  */
+  /* max-width: 960px; */
+  text-align: justify;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: -1.5px;
+  color: var(--primaryText);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--primaryText);
+}
+
+p {
+  font-size: 24px;
+  color: var(--headerText);
+}
+
+.project-text > p {
+  font-size: 20px;
+  color: var(--headerText);
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.collaboration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+      appearance: none;
+      background: #ff9d77;
+      border-radius: 6px;
+      box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+      white-space: nowrap;
+}
+
+.find-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
 }
