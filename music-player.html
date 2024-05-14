@@ -5,39 +5,41 @@
   <meta charset="utf-8" />
   <meta name="author" content="Mona Naamani">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mona Naamani Portfolio</title>
-  <link rel="shortcut icon" type="image/jpg" href="/images/small-profile.jpeg" />
+  <title>Music Player</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
+  <!-- <script src="main.js" defer></script> -->
 </head>
 
 <body>
-  <div class="music-container">
-    <div class="music-info">
-      <h4 id="title">Wishful Thinking</h4>
-      <div class="progress-container">
-        <div class="progress"></div>
+  <div class="music-player">
+    <div class="music-container">
+      <div class="music-info">
+        <h4 id="title">Wishful Thinking</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
       </div>
-    </div>
-
-    <audio src="music/Mona-Wishful Thinking.mp3" id="audio"></audio>
-
-    <div class="img-container">
-      <img src="images/george-pagan-iii-BB4teVwxm5k-unsplash.jpg" alt="music-cover" id="cover">
-    </div>
-    <div class="navigation">
-      <button id="prev" class="action-btn">
-        <!-- <img class="music-icon" src="/images/icons8-previous-50.png" alt=""> -->
-        <i class="fas fa-backward">Prev</i>
-      </button>
-      <button id="play" class="action-btn action-btn-big">
-        <!-- <img class="music-icon" src="/images/icons8-play-50.png" alt=""> -->
-        <i class="fas fa-play">Play</i>
-      </button>
-      <button id="next" class="action-btn">
-        <!-- <img class="music-icon" src="/images/icons8-next-50.png" alt=""> -->
-        <i class="fas fa-forward">Next</i>
-      </button>
+    
+      <audio src="music/Mona-Wishful Thinking.mp3" id="audio"></audio>
+    
+      <div class="img-container">
+        <img src="images/clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg" alt="music-cover" id="cover">
+      </div>
+    
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <!-- <img class="music-icon" src="/images/icons8-previous-50.png" alt=""> -->
+          <i class="fas fa-backward">Prev</i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <!-- <img class="music-icon" src="/images/icons8-play-50.png" alt=""> -->
+          <i class="fas fa-play">Play</i>
+        </button>
+        <button id="next" class="action-btn">
+          <!-- <img class="music-icon" src="/images/icons8-next-50.png" alt=""> -->
+          <i class="fas fa-forward">Next</i>
+        </button>
+      </div>
     </div>
   </div>
 </body>
