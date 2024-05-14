@@ -296,3 +296,20 @@ button {
   opacity: 1;
   transform: translateY(-100%);
 }
+
+.progress-container {
+  background-color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: red;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}

@@ -10,7 +10,7 @@
   const cover = document.querySelector('#cover');
 
 // song titles
-const songs = ['Daydreaming', 'Wishful Thinking'];
+const songs = ['Daydreaming', 'Wishful-Thinking'];
 
 // keep track of songs
 let songIndex = 1;
@@ -27,18 +27,29 @@ function loadSong(song) {
 
 function playSong() {
   musicContainer.classList.add('play')
-  playBtn.querySelector('i.fas').classList.remove('fa-play')
-  playBtn.querySelector('i.fas').classList.add('fa-pause')
-
   audio.play()
 }
 
 function pauseSong() {
   musicContainer.classList.remove('play')
-  playBtn.querySelector('i.fas').classList.add('fa-play')
-  playBtn.querySelector('i.fas').classList.remove('fa-pause')
-
   audio.pause()
+}
+
+function prevSong () {
+  songIndex--
+
+  if(songIndex < 0) {
+    songIndex = songs.length - 1
+  }
+
+  loadSong(songs[songIndex])
+  playSong()
+}
+
+
+
+function nextSong () {
+
 }
 
 // Event listeners
@@ -52,3 +63,8 @@ playBtn.addEventListener('click', () => {
   }
 }
 )
+
+// Change song events
+
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
