@@ -53,7 +53,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
-  height: 12svh;
+  height: 15svh;
   width: 100%;
   min-height: 60px;
   border-bottom: 0.5px solid var(--separator);
@@ -66,7 +66,7 @@ body {
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--headerText);
-  height: 12svh;
+  height: 15svh;
   background: linear-gradient(to left,
         #00e0ec,
         #008ba7,
@@ -76,12 +76,34 @@ body {
 
 .right-links {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  padding: 0 50px;
 }
 
-.right-links > li > a {
+.header-link {
+  position: relative;
   color: var(--primaryText);
-  font-weight: 700;
+  /* padding: 20px 0; */
+}
+
+.header-link:after {
+  content: "";
+  position: absolute;
+  background-color: #ff9d77;
+  border-radius: 10px;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.header-link:hover:after {
+  width: 100%;
+}
+
+.header-link:hover {
+  color: #d6744d;
 }
 
 main {
