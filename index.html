@@ -14,11 +14,11 @@
 <body>
   <nav class="navbar">
       <ul class="right-links">
-        <li><a class="header-link" href="#">
+        <li><a class="header-link" href="#about-me">
           About Me
         </a></li>
-        <li><a class="header-link" href="#">
-          My Projects
+        <li><a class="header-link" href="#featured-work">
+          Featured Work
         </a></li>
         <li><a class="header-link" href="#">
           Contact Me
@@ -63,11 +63,19 @@
           Web Developer
         </div>
       </div>
+      <div class="animation-container">
+        <div class="animated-bg hidden"></div>
+        <div class="animated-bg hidden"></div>
+        <div class="animated-bg hidden"></div>
+        <div class="animated-bg hidden"></div>
+        <div class="animated-bg hidden"></div>
+        <div class="animated-bg hidden"></div>
+      </div>
     </header>
-    <div class="headline">
+    <div class="headline" id="about-me">
       <h5 class="headline-title">
         About Me
-      </h3>
+      </h5>
       <h1>
         Hello and welcome!
       </h1>
@@ -81,7 +89,7 @@
         valuable work experience, to pursue a fulfilling path in programming.
       </p>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="featured-work">
       <div class="portfolio-headline">
         <h1>Featured Work</h1>
         <p>
@@ -92,24 +100,31 @@
       </div>
       <div class="portfolio-section">
         <div class="project-tile">
-          <h2>Rock Paper Scissors</h2>
-          <div class="project-text">
-            <p>The Rock Paper Scissors project is a web-based application developed as part of The Odin Project curriculum. This
-              project showcases my skills in JavaScript, HTML, and CSS while offering a fun and interactive gaming experience.
-            </p>
-            <p>You can enjoy the game by visiting <a href="https://monanaamani.github.io/Rock-Paper-Scissors/" target="_blank"
-                id="profile-link">here</a>. Choose your move Rock, Paper, or Scissors, and see if you can outsmart the computer!
-            </p>
-          </div>
+          <h2>
+            Rock Paper Scissors
+          </h2>
+          <p class="project-text">
+            The Rock Paper Scissors project is a web-based application developed as part of The Odin Project curriculum. This project showcases my skills in JavaScript, HTML, and CSS while offering a fun and interactive gaming experience.
+          </p>
+          <p>
+            You can enjoy the game by visiting <a href="https://monanaamani.github.io/Rock-Paper-Scissors/" target="_blank"
+          id="profile-link">here</a>. Choose your move Rock, Paper, or Scissors, and see if you can outsmart the computer!
+          </p>
         </div>
         <div class="project-tile">
-          <h2>Etch a Sketch</h2>
-          <div class="project-text">
-            <p>The Etch A Sketch project is a web-based application developed as part of The Odin Project curriculum. Inspired
-              by the classic mechanical drawing toy, this project showcases my HTML, CSS, and JavaScript skills.</p>
-            <p>You can access and start drawing on the virtual canvas by clicking <a
+          <h2>
+            Etch a Sketch
+          </h2>
+          <div >
+            <p class="project-text">
+              The Etch A Sketch project is a web-based application developed as part of The Odin Project curriculum. Inspired
+              by the classic mechanical drawing toy, this project showcases my HTML, CSS, and JavaScript skills.
+            </p>
+            <p>
+              You can access and start drawing on the virtual canvas by clicking <a
                 href="https://monanaamani.github.io/Etch-a-Sketch/" target="_blank" id="profile-link">here</a>! Feel free to
-              experiment with different grid sizes to unleash your creativity.</p>
+              experiment with different grid sizes to unleash your creativity.
+            </p>
           </div>
         </div>
       </div> 
