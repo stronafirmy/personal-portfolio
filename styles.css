@@ -166,6 +166,11 @@ h2 {
   color: var(--primaryText);
 }
 
+h3 {
+  font-size: 20px;
+  color: var(--primaryText);
+}
+
 h5 {
   font-size: 14px;
   color: var(--secondaryText);
@@ -188,21 +193,53 @@ p {
   flex-direction: column;
 }
 
-.portfolio-headline > h1,
-.project-tile > h2 {
-    text-align: center;
+.portfolio-headline {
+  margin-bottom: 50px;
 }
 
-.portfolio-section {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.portfolio-headline > h1,
+.portfolio-headline > p {
+    text-align: center;
+    width: 80%;
+    align-self: center;
+}
+
+
+/* 
+
+
+.project-image {
+  width: 30%;
+  border-radius: 10px;
 }
 
 .project-tile {
-  border: solid 2px black;
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.project-text {
+  font-size: 20px;
+  text-align: justify;
+  hyphens: auto;
+  width: 50%;
+}
+
+.skill-tags {
+  display: flex;
+  gap: 10px;
+  justify-self: center;
+}
+
+.skill-tags > li {
+  background-color: #ff9e7766;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+} */
 
 .collaboration {
   display: flex;
@@ -389,7 +426,7 @@ button {
   transition-delay: 1s;
   background: linear-gradient(to right,
       #008ba7,
-      #008ba7);
+      #ff9d77);
   left: 240px;
   bottom: -12px;
 }

@@ -97,7 +97,7 @@ audio.addEventListener('ended', nextSong)
 // Scroll Animations
 
 const observer = new IntersectionObserver((entries) => {
-  entries .forEach((entry) => {
+  entries.forEach((entry) => {
     console.log(entry)
     if (entry.isIntersecting) {
       entry.target.classList.add('show')
