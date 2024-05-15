@@ -120,13 +120,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-.container {
-  background-image: url("images/clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 }
 
 .name {
@@ -137,6 +131,36 @@ header {
   background-color: white;
   width: 100%;
   padding: 20px;
+}
+
+header::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 60px;
+  left: 150px;
+  background-color: #d6744d;
+  transition: transform ease-in-out 0.2s;
+}
+
+header:hover::after {
+  transform: scaleX(15);
+}
+
+header::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  background-color: #d6744d;
+  transition: transform ease-in-out 0.2s;
+}
+
+header:hover::before {
+  transform: scaleX(15);
 }
 
 .title {
@@ -154,6 +178,10 @@ header {
   margin-top: -50px;
 }
 
+.headline-title {
+  margin-bottom: -15px;
+}
+
 h1 {
   font-size: 32px;
   letter-spacing: -1.5px;
@@ -165,14 +193,16 @@ h2 {
   color: var(--primaryText);
 }
 
-h3 {
-  font-size: 24px;
-  color: var(--primaryText);
+h5 {
+  font-size: 14px;
+  color: var(--secondaryText);
+  font-weight: 300;
 }
 
 p {
   font-size: 24px;
   color: var(--headerText);
+  line-height: 1.5;
 }
 
 .project-text > p {
