@@ -208,19 +208,26 @@ p {
     align-self: center;
 }
 
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .section {
   display: flex;
   background-color: #ff9e7732;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  height: 50svh;
+  height: 40svh;
   gap: 50px;
-  padding: 50px;
+  padding: 0px 50px;
 }
 
-.project-image {
-  width: 100%;
+.section > img {
+  width: 500px;
+  height: 200px;
   border-radius: 10px;
 }
 
@@ -240,7 +247,21 @@ p {
 }
 
 .skill-btn {
-
+  background-color: #ff9e77;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: var(--primaryText);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
 }
 
 /* 
