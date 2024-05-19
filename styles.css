@@ -92,7 +92,7 @@ body {
   background-color: #ff9d77;
   border-radius: 10px;
   height: 3px;
-  width: 0;
+  width: 15px;
   left: 0;
   bottom: -1px;
   transition: 0.5s;
