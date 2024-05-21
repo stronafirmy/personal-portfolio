@@ -29,44 +29,5 @@ import '../styles/global.css'
       <slot/>
     </main>
     <div class='footer'>Copyright © Mona Naamani 2024</div>
-    <script>
-      // Event listeners
-      playBtn.addEventListener('click', () => {
-        const isPlaying = musicContainer.classList.contains('play')
-
-        if (isPlaying) {
-          pauseSong()
-        } else {
-          playSong()
-        }
-      })
-
-      // Change song events
-
-      prevBtn.addEventListener('click', prevSong)
-      nextBtn.addEventListener('click', nextSong)
-
-      audio.addEventListener('timeupdate', updateProgress)
-
-      progressContainer.addEventListener('click', setProgress)
-
-      audio.addEventListener('ended', nextSong)
-
-      // Scroll Animations
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          console.log(entry)
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show')
-          } else {
-            entry.target.classList.remove('show')
-          }
-        })
-      })
-
-      const hiddenElements = document.querySelectorAll('.hidden')
-      hiddenElements.forEach((el) => observer.observe(el))
-    </script>
   </body>
 </html>
