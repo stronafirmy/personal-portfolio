@@ -1,16 +1,157 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro'
+import '../styles/global.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <header class='hidden'>
+    <div class='name'>
+      Mona Naamani
+      <div class='title'>Web Developer</div>
+    </div>
+    <div class='animation-container'>
+      <div class='animated-bg hidden'></div>
+      <div class='animated-bg hidden'></div>
+      <div class='animated-bg hidden'></div>
+      <div class='animated-bg hidden'></div>
+      <div class='animated-bg hidden'></div>
+      <div class='animated-bg hidden'></div>
+    </div>
+  </header>
+  <div class='headline'>
+    <h5 id='about-me' class='headline-title'>About Me</h5>
+    <h1>Hello and welcome!</h1>
+    <p>
+      I'm Mona Naamani, a passionate developer with a Bachelor of Business
+      Administration degree in Human Resources Management from Haigazian
+      University in Lebanon. While my academic and professional journey
+      initially led me into the field of Human Resources, I discovered an
+      insatiable curiosity for coding and its incredible potential for
+      innovation. Driven by this newfound passion, I embarked on a self-guided
+      journey to learn various coding languages. This journey ultimately
+      motivated me to transition from my career in Human Resources, where I
+      accumulated nearly two years of valuable work experience, to pursue a
+      fulfilling path in programming.
+    </p>
+  </div>
+  <div class='portfolio'>
+    <div class='portfolio-headline'>
+      <h1 id='featured-work'>Featured Work</h1>
+      <p>
+        In this portfolio, you'll find a glimpse of my coding journey through
+        two of my projects: "Rock, Paper, Scissors" and "Etch A Sketch." These
+        projects showcase my dedication to learning, problem-solving skills, and
+        creative thinking. I'm excited to share my coding endeavors with you,
+        and I hope you enjoy exploring my work!
+      </p>
+    </div>
+    <div class='portfolio-section'>
+      <section class='section'>
+        <img
+          class='project-image'
+          src='images/Rock-paper-scissors.PNG'
+          alt='rock-paper-scissors'
+        />
+        <div class='project-tile'>
+          <h2>Rock Paper Scissors</h2>
+          <p class='project-text'>
+            The Rock Paper Scissors project is a web-based application developed
+            as part of The Odin Project curriculum. This project showcases my
+            skills in JavaScript, HTML, and CSS while offering a fun and
+            interactive gaming experience You can enjoy the game by visiting
+            <a
+              href='https://monanaamani.github.io/Rock-Paper-Scissors/'
+              target='_blank'
+              class='project-link'>here</a
+            >.
+            <div class='skill-tags'>
+              <button class='skill-btn'>JavaScript</button>
+              <button class='skill-btn'>HTML</button>
+              <button class='skill-btn'>CSS</button>
+            </div>
+          </p>
+        </div>
+      </section>
+      <section class='section'>
+        <img src='images/Etch-a-sketch.PNG' alt='Etch-a-Sketch' />
+        <div class='project-tile'>
+          <h2>Etch a Sketch</h2>
+          <div>
+            <p class='project-text'>
+              The Etch A Sketch project is a web-based application developed as
+              part of The Odin Project curriculum. Inspired by the classic
+              mechanical drawing toy, this project showcases my HTML, CSS, and
+              JavaScript skills. You can access and start drawing on the virtual
+              canvas by clicking <a
+                href='https://monanaamani.github.io/Etch-a-Sketch/'
+                target='_blank'
+                class='project-link'>here</a
+              >! Feel free to experiment with different grid sizes to unleash
+              your creativity.
+              <div class='skill-tags'>
+                <button class='skill-btn'>JavaScript</button>
+                <button class='skill-btn'>HTML</button>
+                <button class='skill-btn'>CSS</button>
+              </div>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class='collaboration'>
+    <h1>Let's work together!</h1>
+    <p>
+      If you're interested in discussing potential collaborations, job
+      opportunities, or simply want to connect and share insights, please don't
+      hesitate to reach out. Let's work together to bring innovative ideas to
+      life!
+    </p>
+    <button class='contact-btn'>Contact Me</button>
+  </div>
+  <div class='find-me'>
+    <div class='socials'>
+      <img class='icon' src='images/icons8-linkedin.svg' alt='Linkedin Icon' />
+      <a
+        href='https://www.linkedin.com/in/monanaamani'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Connect on LinkedIn
+      </a>
+    </div>
+    <div class='socials'>
+      <img
+        class='icon'
+        src='images/icons8-freecodecamp.png'
+        alt='Freecodecamp Icon'
+      />
+      <a
+        href='https://www.freecodecamp.org/MonaNaamani'
+        target='_blank'
+        id='profile-link'
+      >
+        View My FreeCodeCamp Profile
+      </a>
+    </div>
+    <div class='socials'>
+      <img class='icon' src='images/icons8-github.svg' alt='Github Icon' />
+      <a
+        href='https://github.com/monanaamani'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Explore My GitHub Projects
+      </a>
+    </div>
+    <div class='socials'>
+      <img
+        class='icon'
+        src='images/icons8-download-64.png'
+        alt='Mona Naamani CV'
+      />
+      <a href='other/MonaNaamani-CV.docx' download> Download my CV! </a>
+    </div>
+  </div>
+</BaseLayout>
+
