@@ -1,6 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import '../styles/global.css'
+import { Image } from 'astro:assets'
+
+import etchASketch from '../images/Etch-a-sketch.PNG'
+import rockPaperScissors from '../images/Rock-paper-scissors.PNG'
+import linkedin from '../images/icons8-linkedin.svg'
+import freecodecamp from '../images/icons8-freecodecamp.png'
+import github from '../images/icons8-github.svg'
+import download from '../images/icons8-download-64.png'
 ---
 
 <BaseLayout>
@@ -47,9 +55,9 @@ import '../styles/global.css'
     </div>
     <div class='portfolio-section'>
       <section class='section'>
-        <img
+        <Image
           class='project-image'
-          src='personal-portfolio/images/Rock-paper-scissors.PNG'
+          src={rockPaperScissors}
           alt='rock-paper-scissors'
         />
         <div class='project-tile'>
@@ -73,10 +81,7 @@ import '../styles/global.css'
         </div>
       </section>
       <section class='section'>
-        <img
-          src='personal-portfolio/images/Etch-a-sketch.PNG'
-          alt='Etch-a-Sketch'
-        />
+        <Image src={etchASketch} alt='Etch-a-Sketch' />
         <div class='project-tile'>
           <h2>Etch a Sketch</h2>
           <div>
@@ -114,11 +119,7 @@ import '../styles/global.css'
   </div>
   <div class='find-me'>
     <div class='socials'>
-      <img
-        class='icon'
-        src='personal-portfolio/images/icons8-linkedin.svg'
-        alt='Linkedin Icon'
-      />
+      <Image class='icon' src={linkedin} alt='Linkedin Icon' />
       <a
         href='https://www.linkedin.com/in/monanaamani'
         target='_blank'
@@ -128,11 +129,7 @@ import '../styles/global.css'
       </a>
     </div>
     <div class='socials'>
-      <img
-        class='icon'
-        src='personal-portfolio/images/icons8-freecodecamp.png'
-        alt='Freecodecamp Icon'
-      />
+      <Image class='icon' src={freecodecamp} alt='Freecodecamp Icon' />
       <a
         href='https://www.freecodecamp.org/MonaNaamani'
         target='_blank'
@@ -142,11 +139,7 @@ import '../styles/global.css'
       </a>
     </div>
     <div class='socials'>
-      <img
-        class='icon'
-        src='personal-portfolio/images/icons8-github.svg'
-        alt='Github Icon'
-      />
+      <Image class='icon' src={github} alt='Github Icon' />
       <a
         href='https://github.com/monanaamani'
         target='_blank'
@@ -156,12 +149,10 @@ import '../styles/global.css'
       </a>
     </div>
     <div class='socials'>
-      <img
-        class='icon'
-        src='personal-portfolio/images/icons8-download-64.png'
-        alt='Mona Naamani CV'
-      />
-      <a href='other/MonaNaamani-CV.docx' download> Download my CV! </a>
+      <Image class='icon' src={download} alt='Mona Naamani CV' />
+      <a href='personal-portfolio/MonaNaamani-CV.docx' download>
+        Download my CV!
+      </a>
     </div>
   </div>
 </BaseLayout>
