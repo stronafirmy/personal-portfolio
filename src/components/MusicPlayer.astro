@@ -15,7 +15,7 @@ import '../styles/global.css'
 
     <div class='img-container'>
       <img
-        src='personal-portfolio/images/Intro.jpg'
+        src='/personal-portfolio/images/Intro.jpg'
         alt='music cover'
         id='cover'
       />
@@ -52,8 +52,8 @@ import '../styles/global.css'
   // update song details
   function loadSong(song) {
     title.innerText = song
-    audio.src = `personal-portfolio/audio/${song}.mp3`
-    cover.src = `personal-portfolio/images/${song}.jpg`
+    audio.src = `/personal-portfolio/audio/${song}.mp3`
+    cover.src = `/personal-portfolio/images/${song}.jpg`
   }
 
   function playSong() {
